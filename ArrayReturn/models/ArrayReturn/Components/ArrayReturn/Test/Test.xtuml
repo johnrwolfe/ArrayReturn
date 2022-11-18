@@ -1,0 +1,82 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("ea0bb287-3044-4983-82c0-0d3bc240e80f",
+	"00000000-0000-0000-0000-000000000000",
+	"82d2a010-40b1-4cba-9e01-39d40e097add",
+	'Test',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("1d06c55d-44fe-4dfc-b049-04a5ffef24b6",
+	112,
+	"ea0bb287-3044-4983-82c0-0d3bc240e80f",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'ArrayReturn::Components::ArrayReturn::Test');
+INSERT INTO DIM_DIA
+	VALUES ("1d06c55d-44fe-4dfc-b049-04a5ffef24b6",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO S_SYNC
+	VALUES ("d5897e25-157d-41eb-9621-d84c7c9b751a",
+	"00000000-0000-0000-0000-000000000000",
+	'T1',
+	'',
+	'create object instance a of A;
+items = a.getItems();
+n = 0;
+while ( n < items.length ) loop
+  LOG::LogInteger( message:items[n] );
+  n = n + 1;
+end while;
+',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0,
+	1);
+INSERT INTO PE_PE
+	VALUES ("d5897e25-157d-41eb-9621-d84c7c9b751a",
+	1,
+	"ea0bb287-3044-4983-82c0-0d3bc240e80f",
+	"00000000-0000-0000-0000-000000000000",
+	1);
+INSERT INTO PE_PE
+	VALUES ("ea0bb287-3044-4983-82c0-0d3bc240e80f",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"d114b8d8-6b6e-4212-b263-5636f483f1f8",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("d114b8d8-6b6e-4212-b263-5636f483f1f8",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'ArrayReturn',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../ArrayReturn.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("82d2a010-40b1-4cba-9e01-39d40e097add",
+	'ArrayReturn',
+	1,
+	'../../../ArrayReturn.xtuml');
